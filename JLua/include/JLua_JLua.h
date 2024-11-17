@@ -9,83 +9,35 @@ extern "C" {
 #endif
 /*
  * Class:     JLua_JLua
- * Method:    newstate
- * Signature: ()J
+ * Method:    v_invoke
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
  */
-JNIEXPORT jlong JNICALL Java_JLua_JLua_newstate
-  (JNIEnv *, jobject);
+JNIEXPORT void JNICALL Java_JLua_JLua_v_1invoke
+  (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jint);
 
 /*
  * Class:     JLua_JLua
- * Method:    openlibs
- * Signature: (J)V
+ * Method:    s_invoke
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
  */
-JNIEXPORT void JNICALL Java_JLua_JLua_openlibs
-  (JNIEnv *, jobject, jlong);
+JNIEXPORT jstring JNICALL Java_JLua_JLua_s_1invoke
+  (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jint);
 
 /*
  * Class:     JLua_JLua
- * Method:    close
- * Signature: (J)V
+ * Method:    i_invoke
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
  */
-JNIEXPORT void JNICALL Java_JLua_JLua_close
-  (JNIEnv *, jobject, jlong);
+JNIEXPORT jint JNICALL Java_JLua_JLua_i_1invoke
+  (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jint);
 
 /*
  * Class:     JLua_JLua
- * Method:    pushstring
- * Signature: (JLjava/lang/String;)V
+ * Method:    l_invoke
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)J
  */
-JNIEXPORT void JNICALL Java_JLua_JLua_pushstring
-  (JNIEnv *, jobject, jlong, jstring);
-
-/*
- * Class:     JLua_JLua
- * Method:    tostring
- * Signature: (JI)Ljava/lang/String;
- */
-JNIEXPORT jstring JNICALL Java_JLua_JLua_tostring
-  (JNIEnv *, jobject, jlong, jint);
-
-/*
- * Class:     JLua_JLua
- * Method:    pushinteger
- * Signature: (JI)V
- */
-JNIEXPORT void JNICALL Java_JLua_JLua_pushinteger
-  (JNIEnv *, jobject, jlong, jint);
-
-/*
- * Class:     JLua_JLua
- * Method:    getglobal
- * Signature: (JLjava/lang/String;)V
- */
-JNIEXPORT void JNICALL Java_JLua_JLua_getglobal
-  (JNIEnv *, jobject, jlong, jstring);
-
-/*
- * Class:     JLua_JLua
- * Method:    gettop
- * Signature: (J)I
- */
-JNIEXPORT jint JNICALL Java_JLua_JLua_gettop
-  (JNIEnv *, jobject, jlong);
-
-/*
- * Class:     JLua_JLua
- * Method:    pcall
- * Signature: (JIII)I
- */
-JNIEXPORT jint JNICALL Java_JLua_JLua_pcall
-  (JNIEnv *, jobject, jlong, jint, jint, jint);
-
-/*
- * Class:     JLua_JLua
- * Method:    dofile
- * Signature: (JLjava/lang/String;)I
- */
-JNIEXPORT jint JNICALL Java_JLua_JLua_dofile
-  (JNIEnv *, jobject, jlong, jstring);
+JNIEXPORT jlong JNICALL Java_JLua_JLua_l_1invoke
+  (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jint);
 
 #ifdef __cplusplus
 }
