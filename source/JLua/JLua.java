@@ -5,11 +5,8 @@ import java.nio.file.Paths;
 
 public class JLua {
     static {
-        System.loadLibrary("JLua/jlualib");
-        /*
         Path path = Paths.get("JLua/jlualib.dll");
         System.load(path.toAbsolutePath().toString());
-         */
     }
 
     String name;
