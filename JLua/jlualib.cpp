@@ -4,7 +4,7 @@
 #include <vector>
 #include <map>
 #include "include/lua.hpp"
-#include "include/JLua_JLua.h"
+#include "JLua_JLua.h"
 
 enum Type {
     Void,
