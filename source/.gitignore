@@ -3,4 +3,5 @@
 JLua/include/*.h
 JLua/include/*.hpp
 *.dll
+*.so
 !JLua/lua54.dll
