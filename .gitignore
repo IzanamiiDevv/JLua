@@ -1,3 +1,6 @@
 .vscode
 *.class
-./JLua/include
+JLua/include/*.h
+JLua/include/*.hpp
+*.dll
+!JLua/lua54.dll
