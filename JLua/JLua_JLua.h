@@ -31,14 +31,6 @@ JNIEXPORT jstring JNICALL Java_JLua_JLua_s_1invoke
 JNIEXPORT jint JNICALL Java_JLua_JLua_i_1invoke
   (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jint);
 
-/*
- * Class:     JLua_JLua
- * Method:    l_invoke
- * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)J
- */
-JNIEXPORT jlong JNICALL Java_JLua_JLua_l_1invoke
-  (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jint);
-
 #ifdef __cplusplus
 }
 #endif
